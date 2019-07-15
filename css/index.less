@@ -1,0 +1,337 @@
+@import './bass.less';
+body {
+    background: #f2f2f2;
+}
+
+.view {
+
+    // 顶部工具栏开始
+    .top_bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        width: 100%;
+        background: orange;
+        .logo {
+            width: 50px;
+            height: 40px;
+            padding: 5px;
+            h1 {
+                a {
+                    display: block;
+                    font-size: 0;
+                    width: 22px;
+                    height: 35px;
+                    background: url(../images/category.png) no-repeat;
+                    background-size: 22px 35px;
+                }
+            }
+    
+        }
+        .search {
+            flex: 1;
+            position: relative;
+            top:0;
+            input {
+             width: 100%;
+             padding: 7px 0;
+            background:#fff;
+            border-radius: 25px;
+            }
+        }
+        .login {
+            width: 50px;
+            height: 40px;
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+            a {
+            }
+        }
+    }
+
+
+    // 轮播图开始
+    .silder {}
+
+
+    // 苏宁导航开始
+    .suning_nav {
+        text-align: center;
+        color: #666;
+        background: #fff;
+        a {
+          float: left;
+           width: 20%;   
+            img {
+                margin: 0 auto;
+                width: 50%;
+            }
+            span {
+                font-size: 12rem/32;
+            }
+        }
+    }
+
+    // 换新机，抢先购开始
+    .act {
+        .act_head {
+            a {
+                float: left;
+                width: 50%;
+                &:nth-child(3) {
+                    clear: both;
+                }
+            }
+        }
+        .act_foot {
+            margin: 0 atuo;
+            a {
+                position: relative;
+                float: left;
+                width: 25%;
+                text-align: center;
+                // color: #fff;
+                .kongtiao {
+                    position: absolute;
+                    top: 15px;
+                    left: 33px;
+                    width: 70%;
+                    margin: 0 auto;
+                }
+                .act_text {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 30px;
+                    font-size: 12rem/32;
+                    color: #fff;
+                }
+            }
+
+
+        }
+    }
+
+
+    // 每日必逛开始
+    .shopping {
+        .shopping_title {
+        }
+        .shopping_content {
+            background: #fff;
+            margin: 0 5px;
+            >a {
+              float: left;
+              padding-top: 10px;
+              padding-left: 5px;
+               width: 50%; 
+               &:nth-child(2n+1) {
+                   border-right: 1px solid #ccc;
+               }
+               &:nth-child(-n+2) {
+                   border-bottom: 1px solid #ccc;
+               }
+                h4 {
+                    font-weight: normal;
+                    font-size: 13rem/32;
+                }
+                p {
+                    font-size: 10rem/32;
+                    color: #666
+                }
+                .shopping_img {
+                    img {
+                        float: left;
+                        width: 50%;
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    // 超市焕新节
+    .supermarket {
+        padding: 10px;
+        a {
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+
+    // 酷玩潮流开始
+    .faction {
+        .faction_content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 5px;
+            box-sizing: border-box;
+            a {
+                width: 50%;
+                padding: 5px;
+                background:url('../images/fs00.jpg') no-repeat;
+                background-size: 100% 100%;
+                color: #fff;
+                p {
+                    width: 85%;
+                    height: 39px;
+                    overflow: hidden;
+                    font-size: 11rem/32;
+                }
+                
+
+            }
+            .others {
+                width: 50%;
+                background: #fff;
+                border-bottom: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                .pro_img {
+                    img {
+                        float: left;
+                        width: 50%;
+                    }
+                }
+                .pro_title {
+                    h4 {
+                        font-weight: normal;
+                        font-size: 12rem/32;
+                        color: #000;
+                    }
+                    p {
+                        font-size: 10rem/32;
+                        color: #666;
+                    }
+                }
+            
+            
+            }
+           
+        }
+    }
+
+    // 生活风尚开始
+    .live_faction {
+        margin: 5px;
+        .live_title {}
+        .live_content {
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                padding-top: 10px;
+                padding-left: 5px;
+                border-bottom: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+                width: 50%;
+                background: #fff;
+                &:nth-last-child(-n+4) {
+                    width: 25%;
+                    font-size: 10rem/32;
+                    .pro_img {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+         
+                .pro_title {
+                    h4 {
+                        font-weight: normal;
+                        font-size: 12rem/32;
+                    }
+                    p {
+                        font-size: 10rem/32;
+                        color: #666;
+                    }
+                }
+                .pro_img {
+                    img {
+                        float: left;
+                        width: 50%;
+                    }
+                }
+                
+            }
+        }
+    }
+
+
+    // 猜你喜欢开始
+    .youlike {
+        .like_title {}
+        .like_content {
+            
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                padding: 5px 5px;
+                width: 50%;
+               
+                    a {
+                     padding: 0 5px;
+                     background: #fff;
+                     border-radius: 5px;
+                     
+                        img {
+                            width: 100%;
+                            
+                        }
+                        .pro_info {
+                            height: 40px;
+                            overflow: hidden;   
+                            
+                            h4 {
+                            font-weight: normal;
+                            font-size: 12rem/32;
+                            }
+                             span {
+                            font-size: 16px;
+                            color: red;
+                            }
+                        }
+                    }
+                }
+            
+            
+            }
+        }
+    }
+
+    .app {
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+
+
+    .foot_nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;  
+        width: 100%; 
+        height: 45px;     
+        background: #fff;
+        a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            font-size: 14px;
+            
+            img {
+                width: 25px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+    
+
+}
